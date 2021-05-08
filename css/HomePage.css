@@ -1,0 +1,159 @@
+* {
+    margin: 0%;
+    padding: 0px;
+}
+
+body {
+    background-image: url("../Images/overlay-bg.jpg");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.logo-top {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 1%;
+}
+
+.logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#IDL {
+    width: 30%;
+}
+
+.top {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.presents {
+    border: 0px solid red;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 1%;
+    padding: auto;
+}
+
+#society {
+    font-family: 'Poppins', sans-serif;
+    font-weight: bolder;
+    font-size: 300%;
+}
+
+#present {
+    font-family: 'Lobster', cursive;
+    font-weight: none;
+    font-size: 150%;
+    margin-top: auto;
+}
+
+#game {
+    margin-top: 2%;
+    font-family: 'Metal Mania', cursive;
+    font-weight: none;
+    font-size: 350%;
+    font-weight: bolder;
+    color: #A52A2A;
+}
+
+.brief {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2%;
+    flex-direction: column;
+}
+
+.instruct {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 1%;
+}
+
+#read-message {
+    font-family: "Poppins";
+    font-size: 130%;
+}
+
+.inst {
+    margin-top: 0%;
+}
+
+#instructions {
+    font-family: 'Ubuntu';
+    font-weight: bolder;
+    font-size: 120%;
+    color: #000000;
+    line-height: 150%;
+}
+
+.game-start {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    margin-top: 7%;
+    flex-direction: column;
+    margin-bottom: 5%;
+}
+
+.start {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#gstart {
+    width: 30%;
+    border-radius: 30px;
+    border: 2px solid #4B0082;
+    background-color: #4B0082;
+    color: #FFFFFF;
+    font-family: 'Secular One', sans-serif;
+    font-size: 200%;
+    padding: 0.05%;
+    transition: all 0.5s;
+    cursor: pointer;
+}
+
+#gstart span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+#gstart span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+
+#gstart:hover span {
+    padding-right: 25px;
+}
+
+#gstart:hover span:after {
+    opacity: 1;
+    right: 0;
+}
