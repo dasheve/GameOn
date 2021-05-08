@@ -14,13 +14,11 @@ function GuessIt(str, len) {
     return wrong;
 }
 
-var check = GuessIt("49575149", "49575149".length);
-
 function checkAnswer4() {
     var answer = document.getElementById("answer").value;
-    if (answer == check) {
+    if (answer == GuessIt("49575149", "49575149".length)) {
         alert("Absolutely Correct........Next one coming up.");
-        window.open("Page5.html");
+        window.open("Page5.html", "_self");
     } else if (answer == "") {
         alert("Please type your response");
     } else {

@@ -14,13 +14,11 @@ function GuessIt(str, len) {
     return wrong;
 }
 
-var check = GuessIt("10897115101114", "10897115101114".length);
-
 function checkAnswer11() {
     var answer = document.getElementById("answer").value;
-    if (answer == check) {
-        alert("You did it......Its time for celebrations.");
-        window.open("https://www.lightday.org/");
+    if (answer == GuessIt("10897115101114", "10897115101114".length)) {
+        alert("You did it. It was the last one. Now we have something for you.");
+        window.open("Page12.html", "_self");
     } else if (answer == "") {
         alert("Please type your response");
     } else {

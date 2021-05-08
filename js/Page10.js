@@ -14,17 +14,23 @@ function GuessIt(str, len) {
     return wrong;
 }
 
-var check = GuessIt("4951", "4951".length);
+var attempt = 3;
 
 function checkAnswer10() {
     var answer = document.getElementById("answer").value;
-    if (answer == check) {
+    if (answer == GuessIt("4951", "4951".length)) {
         alert("Wow, that's great.......Jump on to the next one.");
-        window.open("Page11.html");
+        window.open("Page11.html", "_self");
     } else if (answer == "") {
         alert("Please type your response");
     } else {
-        alert("Your answer is wrong");
-        return false;
+        attempt--; // Decrementing by one.
+        alert("You have left " + attempt + " attempts;");
+        // Disabling fields after 3 attempts.
+        if (attempt == 0) {
+            document.getElementById("answer").disabled = true;
+            document.getElementById("submit").disabled = true;
+            return false;
+        }
     }
 }

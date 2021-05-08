@@ -18,7 +18,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Creepster&family=Original+Surfer&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Secular+One&display=swap" rel="stylesheet">
-    <script src="js/HomePage.js"></script>
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="js/HomeMail.js"></script>
 </head>
 
 <body>
@@ -26,7 +28,6 @@
         <div class="logo-top">
             <div class="logo">
                 <img id="IDL" src="Images/IDLPoster.png">
-
             </div>
         </div>
         <div class="top">
@@ -40,28 +41,40 @@
             <div class="instruct">
                 <p id="read-message">Read all the instructions carefully before proceeding with the game.</p>
                 <div class="inst">
-                    <ol id="instructions">
-                        <li>Open the link 5 minutes before the given time.</li>
-                        <li>The clues are everywhere, All you need is a little smartness.</li>
+                    <ol id="instructions" type="o">
+                        <li>The clues are everywhere, all you need is a little smartness. Nothing is unnecessary.</li>
                         <li>The one who finishes first will win.</li>
-                        <li>The time will be 3-4 hours.</li>
+                        <li>A total of 2.5 hours be given.</li>
                         <li>There will be a certain number of brainstorming puzzles. You need to solve them to move forward.</li>
                         <li>It's an individual event, grouping up is not allowed.</li>
-                        <li>The next riddle will be unlocked using small case letters, numbers from 0-9 can also be used.</li>
+                        <li>The next riddle will be unlocked using small case letters, or numbers from 0-9.</li>
                         <li>NO CAPITAL LETTERS AND SPECIAL CHARACTERS ARE ALLOWED AS PASSWORDS.</li>
-                        <li>Use space where ever necessary, and if you think your answer is correct but the next riddle is not opening, please check your spelling.</li>
+                        <li>Use space wherever necessary, and if you think your answer is correct but the next riddle is not opening, please check your spelling.</li>
+                        <li>The riddles are tricky but might be easy if you are attentive to each word.</li>
                         <li>The use of unfair measures is strictly prohibited. (Disqualify kardunga vroo).</li>
-                        <li>Please don't keep spamming for hints, assigned admins will provide the hints one by one, but with every hint, 3 minutes will be added to your time.</li>
+                        <li>Please don't keep spamming the group for hints, assigned admins will provide the hints one by one, but with every hint, 3 minutes will be added to your time.</li>
                         <li>Use of foul language is strictly prohibited.</li>
                         <li>Admin's decision will be final, any further debates won't be entertained.</li>
+                        <li>If you face any issue/ need any hint, contact:</li>
+                        <ul type="disc">
+                            <li>Kalpajit Roy- 8133928612</li>
+                            <li>Sakshi Garg- 7876594469</li>
+                            <li>Devesh Yadav- 9305528116</li>
+                            <li>Aditya Goyal- 9012011514</li>
+                        </ul>
+                        <li>When you finish, take a screenshot of the riddle number (will be given on top of each page) along with the time and send it on admin whatsapp numbers given above.</li>
+                        <li>Be quick, don't underestimate others.</li>
+                        <li><b>BEST OF LUCK</b></li>
                     </ol>
                 </div>
             </div>
         </div>
         <div class="game-start">
-            <div class="start">
-                <button id="gstart" onclick="start()"><span>Start Game</span></button>
-            </div>
+            <form class="start">
+                <p id="hehe">Enter your name and roll number separated by comma in the text box</p>
+                <input type="text" id="namestudent" required/>
+                <button id="gstart" type="button" onclick="sendmail()"><span>Start Game</span></button>
+            </form>
         </div>
     </section>
 </body>

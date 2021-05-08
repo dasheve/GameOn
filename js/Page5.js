@@ -14,13 +14,11 @@ function GuessIt(str, len) {
     return wrong;
 }
 
-var check = GuessIt("9911111011810112032108101110115", "9911111011810112032108101110115".length);
-
 function checkAnswer5() {
     var answer = document.getElementById("answer").value;
-    if (answer == check) {
+    if (answer == GuessIt("9911111011810112032108101110115", "9911111011810112032108101110115".length)) {
         alert("You got it........Proceeding to next question");
-        window.open("Page6.html");
+        window.open("Page6.html", "_self");
     } else if (answer == "") {
         alert("Please type your response");
     } else {
