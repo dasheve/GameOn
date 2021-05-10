@@ -28,9 +28,10 @@ function checkAnswer10() {
         alert("You have left " + attempt + " attempts;");
         // Disabling fields after 3 attempts.
         if (attempt == 0) {
-            document.getElementById("answer").disabled = true;
-            document.getElementById("submit").disabled = true;
-            return false;
+            window.open("Page12.html");
+            //document.getElementById("answer").disabled = true;
+            //document.getElementById("submit").disabled = true;
+            //return false;
         }
     }
 }
